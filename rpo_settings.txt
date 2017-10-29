@@ -1,0 +1,7 @@
+https://www.freemysqlhosting.net
+Server: sql11.freemysqlhosting.net
+Name: sql11201543
+Username: sql11201543
+Password: RNWDUNINqK ali rposkupina
+Port number: 3306
+id = 1, username = prviuser, password= passworduser
