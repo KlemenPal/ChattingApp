@@ -1,0 +1,80 @@
+/* nastavitev telesa in samega html-ja na celotno višino */
+html, body {
+	border: 0;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+/* pisava */
+input, p, header {
+	font-family:'Lucida Casual', 'Comic Sans MS';
+	font-weight: bold;
+}
+
+/* centriranje forme */
+.forma {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-top: 10%;
+	font-size: 18px;
+}
+
+/* forma */
+.obrazec {
+	background: white;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+	position: relative;
+	border-radius: 10px;
+	width: 40%;
+}
+
+/* oblika headerja - napis Login / Registracija */
+.obrazec header {
+	background: steelblue;
+	color: white;
+	border-radius: 10px 10px 0 0;
+	padding: 30px 30px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+/* oblika odstavke - napis Uporabnik / Password */
+.obrazec p {
+	display: inline-block;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+/* pozicija in oblika input fieldov */
+.obrazec input[type="text"], .obrazec input[type="password"] {
+	border: 1px solid dodgerblue;
+	border-radius: 10px;
+	display: block;
+	font-size: 1em;
+	margin-left: 20px;
+	padding: 5px 20px;
+	width: 80%;
+}
+
+/* pozicija in oblika gumba */
+.obrazec input[type="submit"] {
+	position: relative;
+	transform: translate(-50%, 0);
+	left: 50%;
+	color: white;
+	background: steelblue;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	outline: none;
+	border: none;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 15px rgba(100, 100, 100, 3);
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 300;
+}
