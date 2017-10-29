@@ -1,0 +1,15 @@
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\bin\Debug\RPO-Chatting.exe.config
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\bin\Debug\RPO-Chatting.exe
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\bin\Debug\RPO-Chatting.pdb
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO-Chatting.csprojResolveAssemblyReference.cache
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO_Chatting.Form1.resources
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO_Chatting.Properties.Resources.resources
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO-Chatting.csproj.GenerateResource.Cache
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO-Chatting.csproj.CoreCompileInputs.cache
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO-Chatting.exe
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO-Chatting.pdb
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO_Chatting.Form2.resources
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO_Chatting.Form3.resources
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\bin\Debug\MySql.Data.dll
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\bin\Debug\MySql.Data.xml
+C:\Users\UrosZerak\source\repos\RPO-Chatting\RPO-Chatting\obj\Debug\RPO_Chatting.RegisterForm.resources
