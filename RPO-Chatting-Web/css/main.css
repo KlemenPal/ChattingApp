@@ -1,0 +1,336 @@
+/* Border-box reset */
+html {
+    box-sizing: border-box;
+}
+
+/*
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+*/
+
+/* Telo glavne strani */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: tahona, sans-serif;
+	box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	vertical-align: middle;
+	background-image: url("https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg");
+	background-repeat: repeat;
+}
+
+/* Glava in jedro dokumenta */
+.head {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex; 
+    justify-content: space-between;
+
+}
+.core_public {
+	/* margin-top.. */
+	margin-top: 5%;
+	width: 50%;
+}
+.core_private {
+	
+	margin-top: 5%;
+	width: 50%;
+}
+/* Popravek napačnega prikaza za Firefox (ni prikazal centralno, glava prekrila del vsebine) */
+@-moz-document url-prefix() {
+	.core_public{
+		margin-top: 70px;
+	}
+	.core_private {
+		margin-top: 70px;
+	}
+}
+.head a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.rotationImg {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.rotationImg:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+/* Izgled za scrollbar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: none;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, left bottom, left top,
+									   color-stop(0.25, rgb(130,150,215)),
+									   color-stop(0.50, rgb(70,125,190)),
+									   color-stop(0.75, rgb(30,60,150)));
+}
+
+/* "Container" za chat - NEUPORABLJEN */
+.container {
+	
+}
+
+/* Izgled za Main Chat */
+.chat {
+	margin: 0 auto;
+	width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chat #chatOutput {
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+    border: none;
+}
+/*
+.chat #chatOutput p{
+    margin:0;
+    padding:5px;
+    border-bottom: 1px solid #bbb;
+    word-break: break-all;
+	background: white;
+}
+*/
+.chat #chatInput {
+    width: 440px;
+	margin-top: 20px;
+	height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+.chat #chatSend {
+    width: 20%;
+	margin-top: 20px;
+	margin-left: 5%;
+	color: white;
+	background: steelblue;
+	margin-top: 25px;
+	outline: none;
+	border: none;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 15px rgba(100, 100, 100, 3);
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: Amaranth;
+}
+/* Oblika sporočil */
+.chat #chatOutput  .sporocilo{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+.chat #DMOutput .sporocilo{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+.sporocilo .slikaUp {
+	width: 60px;
+	height: 60px;
+	background: #ccc;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.sporocilo .slikaUp img {
+	width: 100%;
+	height: 100%;
+}
+.sporocilo .msgUp {
+	width: 85%;
+	padding: 15px;
+	margin: 5px 10px 0;
+	background: #527AFF;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+}
+.jaz .msgUp {
+	background: #FF80B2;
+}
+.drugi .msgUp {
+	background: #527AFF;
+	order: -1;
+}
+
+/* Izgled za DM chat */
+.chat #DMOutput {
+    overflow-y: scroll;
+    height: 500px;
+    width: 100%;
+    border: none;
+}
+
+/*
+.chat #DMOutput p{
+    margin:0;
+    padding:5px;
+    border-bottom: 1px solid #bbb;
+    word-break: break-all;
+	background: white;
+}
+*/
+
+.chat #DMInput {
+    width: 440px;
+	margin-top: 20px;
+	height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.chat #DMSend {
+    width: 20%;
+	margin-top: 20px;
+	margin-left: 5%;
+	color: white;
+	background: steelblue;
+	margin-top: 25px;
+	outline: none;
+	border: none;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 15px rgba(100, 100, 100, 3);
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 700;
+	font-family: Amaranth;
+}
+
+/* Vključitev fonta - Amaranth - in ustrezne lastnosti za mojo stran*/
+h1 {
+	font-family: Amaranth;
+	font-size: 36px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 700;
+	line-height: 26px;
+}
+p {
+	font-family: Amaranth;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+blockquote {
+	font-family: Amaranth;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: Amaranth;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+.smallCaps {
+	font-family: Amaranth;
+	font-size: 32px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 700;
+	line-height: 26px;
+}
+.noSmallCaps {
+	font-family: Amaranth;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26px;
+}
+#logout {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	font-family: Amaranth;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+/* Izbris uporabnikov */
+.izbrisStyle {
+	padding: 10px 10px;
+	color: white;
+	background: steelblue;
+	outline: none;
+	border: none;
+	box-shadow: 0px 0px 5px rgba(100, 100, 100, 3);
+	border-radius: 3px;
+	cursor: pointer;
+	font-weight: 300;
+}
+
+/* Gumbi v chat-u */
+.chatButtons {
+    background:none!important;
+    border:none; 
+    padding:0!important;
+	font-size: 12px;
+	margin-left: 6px;
+    
+    /*optional*/
+    font-family:arial,sans-serif; /*input has OS specific font-family*/
+    color:#CCFFFF;
+    text-decoration:underline;
+    cursor:pointer;
+}

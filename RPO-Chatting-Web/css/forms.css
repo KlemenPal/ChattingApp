@@ -1,13 +1,17 @@
 /* nastavitev telesa in samega html-ja na celotno višino */
-html, body {
+body {
+	overflow: hidden;
 	border: 0;
 	padding: 0;
 	margin: 0;
 	height: 100%;
+	background-image: url("https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg");
 }
 
 /* pisava */
-input, p, header {
+.forma input, 
+.forma p, 
+.forma header {
 	font-family:'Lucida Casual', 'Comic Sans MS';
 	font-weight: bold;
 }
@@ -50,7 +54,7 @@ input, p, header {
 }
 
 /* pozicija in oblika input fieldov */
-.obrazec input[type="text"], .obrazec input[type="password"] {
+.obrazec input[type="text"], .obrazec input[type="password"], .obrazec input[type="email"] {
 	border: 1px solid dodgerblue;
 	border-radius: 10px;
 	display: block;

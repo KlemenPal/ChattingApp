@@ -18,22 +18,24 @@ if (isset($_POST['submit'])) {
 			echo '<script language="javascript">';
 			echo 'alert("Registracija uspešna.")';
 			echo '</script>';
-			include_once 'RegistracijaForm.php';
+			include_once 'registracijaForm.php';
         }
         else{ // če uporabniško ime obstaja izpiši napako
-            include_once 'RegistracijaForm.php';
-            ?><p align="center">Uporabnik s tem imenom že obstaja</p><?php
+            include_once 'registracijaForm.php';
+            ?><p align="center"><b>Username already exists.</b></p><?php
         }
     }
     else {
-        include_once 'RegistracijaForm.php';
+        include_once 'registracijaForm.php';
         ?>
-<p align="center">Uporabniško ime in geslo je obvezno.</p>
+<p align="center"><b>Username and password is required.</b></p>
 <?php
     }
 } else {
-        include_once 'RegistracijaForm.php';
+        include_once 'registracijaForm.php';
 ?>
+
+		<p align="center"><b>Input fields have to be correct (GREEN).<b></p>
 <?php
     }
 ?>

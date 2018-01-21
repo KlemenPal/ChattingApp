@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
         $user = $_POST['user'];
         $geslo = $_POST['pass'];
 		
+		
 		// vključitev dokumenta, ki obravnava z MySQL bazo
         include_once 'dbcontrollers/Uporabnik.php';
         $upor = new Uporabnik();
@@ -23,12 +24,16 @@ if (isset($_POST['submit'])) {
 		// preverjanje pravilnosti uporabniškega imena in gesla
         if ($upor->UserLogin($user, $geslo) == true) {
             $_SESSION['user']=$user;
+			$_SESSION['chat']="NOROOM"; // za glavni chat v sobi
+			$_SESSION['DMchat']="NOUSER"; // za DM chat
+			unset($_SESSION['chat']);
+			unset($_SESSION['DMchat']);
             header('Location: index.php');
             exit();
         } else { // izpis, če geslo ni bilo pravilno
             include_once 'loginForm.php';
 					?>
-						<p align="center">Error! Username or password incorrect! Login failed.</p>
+						<p align="center"><b>Error! Username or password incorrect! Login failed.</b></p>
 					<?php
 
         }
@@ -37,10 +42,11 @@ if (isset($_POST['submit'])) {
         include_once 'loginForm.php';
 
 ?>
-<p align="center">Error! Username or password incorrect! Login failed.</p>
+<p align="center"><b>Error! Username or password incorrect! Login failed.</b></p>
 <?php
     }
 } else {
     include_once 'loginForm.php';
+	?><p align="center"><b>Input fields have to be correct (GREEN).<b></p><?php
 }?>
 
